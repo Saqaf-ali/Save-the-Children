@@ -5,7 +5,7 @@
 }
 
 :root {
-  --base-font-size: 16px;
+  --base-font-size: 12px;
   --scale-ratio: 1.333;
   /* النسبة 1.333 */
   /* أحجام الخطوط المحسوبة */
@@ -63,7 +63,12 @@ ul {
   font-size: var(--text-md);
 }
 .btn:hover {
-  background-color: rgba(218, 41, 28, 0.2); /* semi-transparent secondary color */
+  background-color: rgba(
+    218,
+    41,
+    28,
+    0.2
+  ); /* semi-transparent secondary color */
   border: 1px solid var(--secondary-color);
   color: white;
   animation-name: fadeIn;
@@ -74,7 +79,6 @@ ul {
   height: 90%;
   background-color: #7b7b68;
   border-radius: 1rem;
-  /* padding: 1rem; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -86,9 +90,7 @@ ul {
 
 .container .mainContainer {
   width: 100%;
-
   padding: 1rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,50 +107,52 @@ ul {
   margin: 1rem;
 }
 
+/* 
+============================
+    Navigation
+============================
+*/
+
 nav {
-  /* margin: 1rem  0; */
-  /* width: 40%; */
   display: flex;
   justify-content: space-between;
 }
-nav .navLinks, nav .nav-icons {
+nav .navLinks,
+nav .nav-icons {
   display: flex;
 }
 nav ul li {
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 .nav-icons {
   margin-left: 2rem;
 }
-.aboutUsMenue{
-    background-color: transparent;
-    /* border-radius: 0.5rem; */
-    /* padding: 0.5rem; */
-    position: relative;
-  
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-    /* width: 200px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-
+.aboutUsMenue {
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.aboutItems{
-     width: 200px;
-    position: absolute;
-      top: 5rem;
-    left: 0;
-    z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.475);
-    border-radius: 1rem;
-    padding: 1rem;
-    /* width: 100%; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   
+.aboutItems {
+  width: 200px;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.475);
+  border-radius: 1rem;
+  padding: 1rem;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .aboutItems li {
   margin: 0.5rem 0;
+}
+summary::marker {
+  color: var(--secondary-color);
+  font-weight: bold;
 }

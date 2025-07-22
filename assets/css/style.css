@@ -82,6 +82,15 @@ ul {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    
+  }
+    
+}
+
 /* 
 ===========================
     Header
@@ -101,12 +110,21 @@ ul {
   flex-wrap: wrap;
 }
 
+.container .mainContainer *{
+    /* flex-grow: 1; */
+}
 .brandImg .logo {
   width: 12rem;
 
   margin: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  .brandImg .logo {
+    width: 8rem;
+  }
+    
+}
 /* 
 ============================
     Navigation
@@ -117,9 +135,18 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
 nav .navLinks,
 nav .nav-icons {
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  nav .navLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+    
 }
 nav ul li {
   margin: 0 1rem;

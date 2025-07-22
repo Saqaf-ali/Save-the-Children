@@ -139,6 +139,16 @@ ul {
   }   
 }
 
+.headerFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.475);
+  border-radius: 1rem;
+}
 
 @media screen and (max-width: 1024px) {
   .headerFlex {

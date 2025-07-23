@@ -75,7 +75,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   .btn {
-   font-size: var(--text-sm);
+   /* font-size: var(--text-sm); */
         padding: 0.5rem 0.8rem;
         position: fixed;
         bottom: 20px;
@@ -89,17 +89,27 @@ a:hover {
   }
 }
 
-.btn:hover,
-.btnSecondary {
-  background-color: rgba(
-    218,
-    41,
-    28,
-    0.2
-  ); /* semi-transparent secondary color */
+.btn:hover {
+  background-color: rgba( 218, 41, 28, 0.2 ); /* semi-transparent secondary color */
   border: 1px solid var(--secondary-color);
-  color: white;
+  /* color: white; */
   /* animation-name: fadeIn; */
+}
+
+.btnSecondary{
+  background-color: rgba(30, 27, 27, 0.482) ;
+  color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: var(--text-md);
+}
+.btnSecondary:hover {
+  background-color: rgba( 30, 27, 27, 0.482 );
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+ 
 }
 
 @media screen and (min-width: 769px) {
@@ -179,8 +189,8 @@ a:hover {
     justify-content: space-between;
     width: 100%;
     padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgba(0, 0, 0, 0.475);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.475); */
     border-radius: 1rem;
     align-content: center;
     /* flex-wrap: nowrap; */
@@ -289,9 +299,12 @@ summary::marker {
   height: 100%;
 }
 
-/* #manueNav {
+/* icon Menu Navigation */
+#manueNav {
   display: none;
-} */
+}
+
+
 .visible {
   display: revert !important;
 }
@@ -299,6 +312,19 @@ summary::marker {
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  #manueNav {
+    display: revert;
+    /* position: fixed; */
+ 
+  }
+
+  #manueNav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
 /* 
 ====================
 MAIN
@@ -415,9 +441,9 @@ HERO
 }
 
 @media screen and (max-width: 768px) {
-  /* footer{
+  footer{
    margin-bottom: 5rem;
-  }  */
+  } 
 }
 
 /* 
@@ -438,7 +464,7 @@ section h2 {
 /* border bottum of title section  but color of right*/
 section h2::before {
   content: "";
-  width: 3rem;
+  width: 2rem;
   border-bottom: 2px solid #ffffffab;
   position: absolute;
   bottom: -2px;
@@ -447,7 +473,7 @@ section h2::before {
 /* border bottum of title section  but color of left*/
 section h2::after {
   content: "";
-  width: 3rem;
+  width: 2rem;
   border-bottom: 2px solid #ffffffab;
   position: absolute;
   right: 0;
@@ -523,3 +549,4 @@ section .content {
     grid-column: 2/3;
   }
 }
+

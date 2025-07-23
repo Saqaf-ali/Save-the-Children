@@ -1,7 +1,15 @@
-* {
+/*
+===========================
+  Universal Styles
+===========================
+*/
+html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 :root {
@@ -61,9 +69,6 @@ a:hover {
   color: #0e3935;
 }
 
-a:visited {
-  /* color: red; */
-}
 
 .btn {
   background-color: var(--secondary-color);
@@ -82,13 +87,14 @@ a:visited {
     position: inherit;
     bottom: 0;
     right: 0;
-    width: 90%;
+    width: 100%;
+    max-width: 400px;
     z-index: 50;
     margin: 5%;
   }
 }
 
-.btn:hover,.btnSecndary {
+.btn:hover,.btnSecondary {
   background-color: rgba(
     218,
     41,
@@ -149,15 +155,9 @@ a:visited {
   /* clear: both; */
 }
 
-@media screen and (min-width: 1025px) {
-  .container .mainContainer {
-    /* width: 90%; */
-  }
-}
 
-.container .mainContainer * {
-  /* flex-grow: 1; */
-}
+
+
 .brandImg .logo {
   width: 12rem;
 
@@ -229,7 +229,7 @@ nav {
 }
 
 #manueNav {
-  /* display: none; */
+  display: none;
 }
 nav .navLinks,
 nav .nav-icons {

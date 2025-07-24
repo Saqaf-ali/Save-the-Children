@@ -57,15 +57,16 @@ body {
 a {
   color: #fff;
   text-decoration: none;
+  transition: 1;
 }
 ul {
   list-style: none;
 }
 
 a:hover {
-  text-decoration: underline solid white;
-  text-decoration-thickness: 2px;
-  color: #0e3935;
+  text-decoration: underline solid var(--secondary-color);
+
+  text-underline-offset: 2px;
 }
 
 .btn {
@@ -89,16 +90,13 @@ a:hover {
         width: 100%;
         max-width: 400px;
         z-index: 50;
-        /* margin: 4%; */
         transform: translateX(-50%);
   }
 }
 
 .btn:hover {
-  background-color: rgba( 218, 41, 28, 0.2 ); /* semi-transparent secondary color */
-  border: 1px solid var(--secondary-color);
-  /* color: white; */
-  /* animation-name: fadeIn; */
+  background-color: transparent; 
+  border: 1px solid var(--primary-color);
 }
 
 .btnSecondary{
@@ -317,13 +315,16 @@ summary::marker {
 @media screen and (max-width: 768px) {
   #manueNav {
     display: revert;
-    /* position: fixed; */
- 
   }
 
   #manueNav ul {
     flex-direction: column;
     align-items: center;
+  }
+  nav ul li:hover {
+    background-color: rgba(30, 27, 27, 0.482);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
   }
   
 }

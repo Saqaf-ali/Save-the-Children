@@ -36,15 +36,14 @@
   --primary-color: #E94130;
   --secondary-color: #3DB8B1;
   --tertiary-color: #FFE7E2;
-  --text-color: #eee;
+  /* --text-color: #eee; */
 
   
 }
 body {
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-  /* background: linear-gradient(135deg, #E94130 0%, #3DB8B1 60%, #FFE7E2 100%); */
-  color: var(--text-color);
+  color:#eee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,12 +137,7 @@ a:hover {
     top: 0;
     bottom: 0;
 }
-/* 
-@media screen and (max-width: 1024px) {
-  .container {
-    width: 100%;
-  }
-} */
+
 
 /* 
 ===========================
@@ -157,7 +151,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.475);
+  background-color: rgb(0 0 0 / 61%);
   border-radius: 1rem 1rem 0 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   align-content: center;
@@ -368,6 +362,7 @@ HERO
   grid-template-columns: auto;
   grid-template-rows: 1fr 1fr;
   gap: 0.5rem;
+      border: #242424 3px solid;
 }
 
 @media screen and (max-width: 768px) {
@@ -419,7 +414,7 @@ HERO
  */
 
 .information-footer {
-  background-color: var(--primary-color);
+   background-color: rgb(0 0 0 / 61%);
   color: var(--secondary-color);
   padding: 1rem;
   text-align: center;
@@ -464,7 +459,7 @@ section h2 {
   text-align: center;
   position: relative;
   /* text-decoration: wavy var(--secondary-color) underline; */
-  color: var(--secondary-color);
+  color: var(--primary-color);
   display: inline-block;
   border-bottom: 2px outset red;
   padding-bottom: 0.5rem;
@@ -497,6 +492,7 @@ section .title {
 
 section .content {
   /* background-color: #801f1f; */
+   background-color: rgba(0, 0, 0, 0.475);  
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr .5fr;

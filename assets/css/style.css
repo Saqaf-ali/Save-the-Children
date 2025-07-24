@@ -456,7 +456,7 @@ HERO
     =================
     */
 
-section h2 {
+section .title {
   text-align: center;
   position: relative;
   /* text-decoration: wavy var(--secondary-color) underline; */
@@ -466,7 +466,7 @@ section h2 {
   padding-bottom: 0.5rem;
 }
 /* border bottum of title section  but color of right*/
-section h2::before {
+section .title::before {
   content: "";
   width: 2rem;
   border-bottom: 2px solid #ffffffab;
@@ -475,7 +475,7 @@ section h2::before {
 }
 
 /* border bottum of title section  but color of left*/
-section h2::after {
+section .title::after {
   content: "";
   width: 2rem;
   border-bottom: 2px solid #ffffffab;

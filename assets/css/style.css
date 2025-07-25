@@ -77,6 +77,8 @@ a:hover {
   border-radius: 1rem;
   cursor: pointer;
   font-size: var(--text-md);
+  transition: .3s;
+       
 }
 
 @media screen and (max-width: 768px) {
@@ -91,12 +93,14 @@ a:hover {
         max-width: 400px;
         z-index: 50;
         transform: translateX(-50%);
+        
   }
 }
 
 .btn:hover {
   background-color: transparent; 
   border: 1px solid var(--primary-color);
+
 }
 
 .btnSecondary{
@@ -107,6 +111,7 @@ a:hover {
   border-radius: 1rem;
   cursor: pointer;
   font-size: var(--text-md);
+   transition: .3s;
 }
 .btnSecondary:hover {
   background-color: rgba( 30, 27, 27, 0.482 );
@@ -205,6 +210,8 @@ a:hover {
   background: transparent;
   color: var(--secondary-color);
   border: transparent;
+
+
 }
 
 /* 
@@ -436,6 +443,11 @@ HERO
   gap: 1rem;
   padding: 1rem;
   margin-top: 1rem;
+}
+.social-media a {
+  color:#007a82;
+ 
+  transition: color 0.3s ease;
 }
 
 .tail {

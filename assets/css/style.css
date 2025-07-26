@@ -89,7 +89,7 @@ a:hover {
         bottom: 20px;
         left: 50%;
         text-align: center;
-        width: 100%;
+        width: 90%;
         max-width: 400px;
         z-index: 50;
         transform: translateX(-50%);
@@ -346,7 +346,7 @@ MAIN
 */
 
 main,.contact {
-  padding: 10rem 2rem 0 2rem;
+  padding: 12.6rem 2rem 0 2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -362,8 +362,9 @@ HERO
 
 */
 
-.hero {
+.heroTitle {
   margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 /* heroContent */
 .hero .heroContent {
@@ -662,4 +663,10 @@ article p{
   .mainTextContact{
     display: none !important;
   }
+}
+
+iframe{
+  height: 50vh;
+    width: 100%;
+    border-radius: 1rem;
 }

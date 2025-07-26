@@ -117,7 +117,11 @@ a:hover {
   background-color: rgba( 30, 27, 27, 0.482 );
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
- 
+}
+@media screen and (max-width: 768px) {
+  .btnSecondary {
+    margin-left: 1rem;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -341,7 +345,7 @@ MAIN
 ===================
 */
 
-main {
+main,.contact {
   padding: 10rem 2rem 0 2rem;
 }
 
@@ -444,10 +448,13 @@ HERO
   padding: 1rem;
   margin-top: 1rem;
 }
-.social-media a {
+.social-media a,.textContent i {
   color:#007a82;
  
   transition: color 0.3s ease;
+}
+.textContent i{
+  color: var(--secondary-color);
 }
 
 .tail {
@@ -510,11 +517,27 @@ section .content {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr .5fr;
   gap: 1rem;
-  height:  33rem;;
+  height:  auto;;
   padding: 1rem;
 }
+.contentStyle3{
+    background-color: rgba(0, 0, 0, 0.475);  
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+  height:  auto;;
+  padding: 1rem;
+  justify-items: start;
+    align-content: space-around;
+    text-align: start;
 
- .imgSection1{
+}
+.contentStyle3 p{
+  display: inline-block;
+}
+.contentStyle2,
+.imgSection1{
   grid-column: 1/-1;
      width: 100%;
     height:361px;;
@@ -533,6 +556,12 @@ section .content {
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .content .textContent {
+  align-items: start;
+  }
+  
 }
 
 .content .imgSection2 {
@@ -619,4 +648,18 @@ article p{
  
   height: 69%;
 
+}
+
+/* 
+===========================
+    CONTACT US
+===========================
+
+*/
+
+
+@media screen and (max-width: 768px) {
+  .mainTextContact{
+    display: none !important;
+  }
 }

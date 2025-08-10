@@ -124,7 +124,9 @@ a:hover {
     background-color: rgba(30, 27, 27, 0.482) !important;
   }
 }
-
+.languageSelect{
+  margin-right: .5rem;
+}
 .container {
   width: 100%;
   /* height: auto; */
@@ -199,13 +201,23 @@ a:hover {
 }
 
 .languageSelect {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background: transparent;
+  background-color: transparent;
+  border: none;
   color: var(--secondary-color);
-  border: transparent;
+  font-size: 1rem;
+  padding: 0.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+}
+
+.languageSelect option {
+  background-color: #333;
+  color: var(--secondary-color);
 }
 
 /* 
@@ -676,6 +688,10 @@ iframe {
 
 
 .loginDescription{
+  background-image: url('../images/content/about/main-img-3.webp') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
       display: flex
 ;
     flex-wrap: wrap;

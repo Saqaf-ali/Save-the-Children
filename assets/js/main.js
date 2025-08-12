@@ -80,3 +80,15 @@ themeToggle.addEventListener("click", () => {
     themeToggle.classList.replace("fa-moon", "fa-sun");
   }
 });
+
+$(document).ready(function() {
+  if (document.getElementById('lightSlider')) {
+    $('#lightSlider').lightSlider({
+      gallery: true,
+      item: 1,
+      loop: true,
+      slideMargin: 0,
+      thumbItem: 9
+    });
+  }
+});

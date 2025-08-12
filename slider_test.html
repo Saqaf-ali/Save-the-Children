@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lightslider Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
+</head>
+<body>
+
+    <ul id="lightSlider">
+        <li>
+            <img src="assets/images/content/articles/img1.webp" alt="bute" height="200px" />
+        </li>
+        <li>
+            <img src="assets/images/content/articles/img2.webp"alt="bute"  height="200px"/>
+        </li>
+        <li>
+            <img src="assets/images/content/articles/img3.webp"alt="bute" height="200px"  />
+        </li>
+        <li>
+            <img src="assets/images/content/articles/img4.webp" alt="bute" height="200px"/>
+        </li>
+        <li>
+            <img src="assets/images/content/articles/img5.webp"alt="bute" height="200px"/>
+        </li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#lightSlider').lightSlider({
+                gallery: true,
+                item: 1,
+                loop: true,
+                slideMargin: 0,
+                thumbItem: 9
+            });
+        });
+    </script>
+</body>
+</html>
